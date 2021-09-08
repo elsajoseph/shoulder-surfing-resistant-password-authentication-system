@@ -1,0 +1,57 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+}
+
+table {
+    border-spacing: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.data-cell, .navigator-row, .navigator-column, .navigator {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3px;
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid white;
+    width: 75px;
+    height: 75px;
+}
+.data-cell {
+    cursor: pointer;
+}
+
+.navigator, .navigator-row, .navigator-column {
+    background-color: #0d6517;
+    color: white;
+}
+.image-wrapper {
+	position: absolute;
+	top: 75px;
+	left: 75px;
+	background-image: url('sample-image.jpg');
+	color: white;
+}
